@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pulso-navy: #081F3B;
+  --color-pulso-lime: #A8E63D;
+  --color-pulso-light: #E9EEF2;
+  --color-pulso-dark: #000000;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
